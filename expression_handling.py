@@ -33,18 +33,18 @@ def expression_handler(expression):
             expression_list.clear()
             expression_list.append(number)
 
-    return expression_list[0]
+    return str(expression_list[0])
 
 
 def perform_operation(expression_list):
     if expression_list[1] == '+':
-        return int(expression_list[0]) + int(expression_list[2])
+        return float(expression_list[0]) + float(expression_list[2])
     elif expression_list[1] == '-':
-        return int(expression_list[0]) - int(expression_list[2])
+        return float(expression_list[0]) - float(expression_list[2])
     elif expression_list[1] == '*':
-        return int(expression_list[0]) * int(expression_list[2])
+        return float(expression_list[0]) * float(expression_list[2])
     elif expression_list[1] == '/':
-        return int(expression_list[0]) / int(expression_list[2])
+        return float(expression_list[0]) / float(expression_list[2])
 
 
 if __name__ == '__main__':
